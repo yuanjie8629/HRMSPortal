@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Login</title>
+		<style>
+		td {
+		padding: 5px 15px;
+		}
+		
+		.card {
+		background-color: #c3e6e2;
+		margin: 5px;
+		padding: 5px 15px 30px 15px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-radius: 15px;
+		min-height: 500px;
+		}
+		</style>
+	</head>
+	<body style="padding: 0 100px 0;">
+			<h1 style="text-align:center;">Login</h1>
+			<hr>
+			<div align="center">
+				<form name="login" action="LoginServlet" method="post">
+					<table style="border:none;">
+						<tr>
+							<td>
+								<label for="userType">Select User Type:</label>
+							</td>
+							<td>
+								<input type="radio" name="userType" value="employee" required>
+								<label for="male">Employee</label>
+								<input type="radio" name="userType" value="employer">
+								<label for="female">Employer</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="username">Enter Username:</label>
+							</td>
+							<td>
+								<input type ="text" name="username" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="password">Enter Password:</label>
+							</td>
+							<td>
+								<input type ="password" name="password" required>
+							</td>
+						</tr>
+					</table>
+					<div style="padding: 5px 15px;">
+						<input type="submit" value="Login">
+						<input type="reset" value="Clear">		
+					</div>
+				</form>
+			</div>
+	</body>
+</html>

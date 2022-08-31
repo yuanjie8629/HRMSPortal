@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Add Employee</title>
+		<style>
+		td {
+			padding: 5px 15px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align:center;">Add Employee</h1>
+		<hr>
+		<div align="center">
+			<form name="addEmp" action="AddEmpServlet" method="post">
+				<table style="border:none;">
+					<tr>
+						<td>
+							<label for="fname">Enter Name:</label>
+						</td>
+						<td>
+							<input type ="text" name="name" placeholder="Tan Yuan Jie" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lname">Select Department:</label>
+						</td>
+						<td>
+							<select name="dept" required>
+								<option value="IT">IT</option>
+								<option value="HR">HR</option>
+								<option value="Marketing">Marketing</option>
+								<option value="Finance">Finance</option>
+								<option value="Accounting">Accounting</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">Enter Email:</label>
+						</td>
+						<td>
+							<input type="email" name="email"  placeholder="xxxxx@gmail.com" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="contact_no">Enter Contact Number:</label>
+						</td>
+						<td>
+							<input type="tel" name="contact_no" placeholder="012-1234567" pattern="[0-9]{3}-[0-9]{7}" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="role">Select Role:</label>
+						</td>
+						<td>
+							<input type ="text" name="role" placeholder="Developer" required>
+						</td>
+					</tr>
+				</table>
+				<div style="padding: 5px 15px;">
+					<input type="submit" value="Add">
+					<input type="reset" value="Clear">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

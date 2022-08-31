@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Sign Up</title>
+		<style>
+		td {
+		padding: 5px 15px;
+		}
+		</style>
+	</head>
+	<body style="padding: 0 100px 0;">
+		<h1 style="text-align:center;">Sign Up</h1>
+		<hr>
+		<div align="center">
+			<form name="signUp" action="SignUpServlet" method="post">
+				<table style="border:none;">
+					<tr>
+						<td>
+							<label for="fname">Enter FirstName:</label>
+						</td>
+						<td>
+							<input type ="text" name="fname" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lname">Enter LastName:</label>
+						</td>
+						<td>
+							<input type ="text" name="lname" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">Enter Email:</label>
+						</td>
+						<td>
+							<input type="email" name="email" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="gender">Select Gender:</label>
+						</td>
+						<td>
+							<input type="radio" name="gender" value="Male" required>
+							<label for="male">Male</label>
+							<input type="radio" name="gender" value="Female">
+							<label for="female">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="city">Select city:</label>
+						</td>
+						<td>
+							<select name="city" required>
+								<option value="Hougang">Hougang</option>
+								<option value="Yishun">Yishun</option>
+								<option value="Tampines">Tampines</option>
+								<option value="Toa Payoh">Toa Payoh</option>
+								<option value="Serangoon">Serangoon</option>
+								<option value="Sembawang">Sembawang</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<div style="padding: 5px 15px;">
+					<input type="submit" value="Sign Up">
+					<input type="reset" value="Clear">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

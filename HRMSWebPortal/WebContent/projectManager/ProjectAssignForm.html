@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Project Assign Form</title>
+		<style>
+		td {
+			padding: 5px 15px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align:center;">Project Assign Form</h1>
+		<hr>
+		<div align="center">
+			<form name="projectAssignForm" action="ProjectAssignServlet" method="post">
+				<table style="border:none;">
+					<tr>
+						<td>
+							<label for="client">Select Client:</label>
+						</td>
+						<td>
+							<select name="client" required>
+								<option value="" disabled selected>Select Client</option>
+								<option value="Google">Google</option>
+								<option value="Meta">Meta</option>
+								<option value="Intel">Intel</option>
+								<option value="Microsoft">Microsoft</option>
+								<option value="Amazon">Amazon</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="tech">Select Technology:</label>
+						</td>
+						<td>
+							<select name="tech" required>
+								<option value="" disabled selected>Select Technology</option>
+								<option value="Java">Java</option>
+								<option value="Python">Python</option>
+								<option value="C#">C#</option>
+								<option value=".NET">.NET</option>
+								<option value="Golang">Golang</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="start_date">Select Start Date:</label>
+						</td>
+						<td>
+							<input id="start_date" type="date" name="start_date" required>
+							<script>
+							document.getElementById("start_date").value = new Date().toISOString().slice(0, 10);
+							</script>
+						</td>
+					</tr>
+				</table>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
